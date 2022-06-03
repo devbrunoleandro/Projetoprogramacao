@@ -1,0 +1,283 @@
+html,
+body {
+    margin: 0; 
+    display: block;
+}
+
+h2 {
+    color: #444444;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style: none;
+    background-color: #02263c;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu--left {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu--right {
+    display: flex;
+    align-items: center;
+}
+
+.menu--left > li,
+.menu--right > li {
+    padding: 25px;
+    color: white;
+    font-family: Montserrat;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 472px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 62%) 0%, rgba(0,0,0,0) 60%), url('../Assets/head.jpg');
+    background-size: 100%;
+}
+
+.hero--items {
+    position: absolute;
+    bottom: 160px;
+    left: 175px;
+}
+
+.hero--items > input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.hero--items > select {
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    width: 136px;
+    background-image: none;
+}
+
+.hero--items > button {
+    padding: 14px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #02263c;
+    color: white;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    background-color: #e5e5e5;
+    margin-top: -5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.contact {
+    flex: 3;
+}
+
+.highlights {
+    flex: 4;
+}
+
+.location {
+    flex: 2;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 85%;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input_group label {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.input_group input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 6px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.form_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form_group > .input_group {
+    width: 45%;
+}
+
+.form_group > .input_group:last-child {
+    width: 100%;
+}
+
+.form_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_cadastrar {
+    width: 51%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #a5eda5;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #085208;
+}
+
+.button_cancelar {
+    width: 51%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #eda5a5;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #520808;
+    margin-right: -15px;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights > img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border: 2px solid #a7a7a7;
+    box-shadow: 0 0 12px #a3a3a3;
+    margin-top: 40px;
+}
+
+.map {
+    width: 100%;
+    height: 80%;
+}
+
+.location button {
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.location button span {
+    margin-left: 9px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #666666;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        font-size: .9em;
+        justify-content: space-between;
+    }
+    
+    .menu--left {
+        width: auto;
+        margin: 0;
+    }
+
+    .menu--left > li, .menu--right > li {
+        padding: 25px 10px;
+    }
+
+    .menu--right > li:last-child {
+        padding-right: 35px;
+    }
+
+}
+.footer-basic {
+  padding:40px !important ;
+  background-color:rgb(73, 130, 216) !;
+  color:#4b4c4d;
+}
+      
+
+      
+.footer-basic li {
+  padding:0 10px;
+}
+      
+.footer-basic ul a {
+ color:inherit;
+ text-decoration:none;
+ opacity:0.8;
+}
+      
+.footer-basic ul a:hover {
+opacity:1;
+}
+      
+.footer-basic .social {
+ text-align:center;
+ padding-bottom:25px;
+}
+      
+.footer-basic .social > a {
+ font-size:24px;
+ width:40px;
+ height:40px;
+ line-height:40px;
+ display:inline-block;
+ text-align:center;
+ border-radius:50%;
+ border:1px solid #ccc;
+ margin:0 8px;
+ color:inherit;
+ opacity:0.75;
+}
+      
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+      
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+ }
+
+
