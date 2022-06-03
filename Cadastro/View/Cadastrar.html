@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobitec</title>
+
+    <link rel="stylesheet" href="CSS/css_forms.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="main">
+        <div class="contact">
+                <h2>Cadastro</h2>
+                
+                
+                    <form action="../Controller/controller_cadastrar.php" method="POST">
+                    <div class="input_group">
+                        <label for="email_usuario">Nome:</label>
+                        <input id="nome" name="nome" type="text" >
+                    </div>
+    
+                    <div class="input_group">
+                        <label for="email_usuario">Email:</label>
+                        <input type="email" id="email" name="email" >
+                    </div>  
+    
+                        
+                        <div class="input_group">
+                            <label for="telefone_usuario">Telefone:</label>
+                            <input type="number" id="telefone" name="telefone" />
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <label for="Senha">Senha:</label>
+                        <input type="password" id="Senha" name="senha" required>
+                    </div>
+                  <br><br>
+                   
+    
+                    <div class="form_buttons">
+                        <input type="submit"  id ="botao" name="botao" value="Cadastrar">
+    
+        
+                        <button class="button_cancelar">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
+
+
+
